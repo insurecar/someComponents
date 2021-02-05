@@ -1,0 +1,78 @@
+@import 'styles/breakpoints.module.scss';
+
+.user-data {
+  background-color: #fff;
+  padding-top: 20px;
+  border-radius: 5px;
+
+  @include for-medium-up {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+  }
+
+  img {
+    display: flex;
+    margin: 0 auto;
+    width: 270px;
+    border: 1px solid #222;
+    border-radius: 15px;
+
+    @include for-small-up {
+      width: 201px;
+    }
+
+    @include for-medium-up {
+      width: 170px;
+      height: 170px;
+      margin: 0;
+    }
+
+    @include for-large-up {
+      width: 225px;
+      height: 225px;
+    }
+  }
+
+  .info {
+    @include for-large-up {
+      margin: auto 0;
+    }
+  }
+
+  p {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    line-height: 140%;
+
+    @include for-medium-up {
+      padding-left: 50px;
+    }
+
+    @include for-large-up {
+      padding-left: 100px;
+    }
+
+    label {
+      color: #bf3142;
+    }
+
+    span {
+      margin-left: 10px;
+      display: block;
+    }
+  }
+
+  .name {
+    margin-top: 20px;
+  }
+
+  .marafon-info {
+    padding-bottom: 30px;
+
+    @include for-medium-up {
+      padding-bottom: 0px;
+    }
+  }
+}
